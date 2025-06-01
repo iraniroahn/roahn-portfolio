@@ -33,20 +33,23 @@
             margin-bottom: 80px;
         }
 
-   .profile-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin: 0 auto 40px;
-    background: #f8f9fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    color: #8492a6;
-    border: 2px solid #e8e8e8;
-    transition: border-color 0.3s ease;
-}
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: 0 auto 40px;
+            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQQBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUWEHInGBEzKRobHBFCNCUtHwCRYDMuHxJR4lN0RWZnKCUotJyomNj7OUUi0kKSw1NjcrOjw8OklOT01PT09PU1NVVldYWVpbXF5fYGFiY2VnZ2hqbGxubG1tb29yc3R1dnd4eXp8fn+Ag4SFhofJi4yNjo+QkZOUlZaXmJqcnZ6foKOkpaaorK6vsLOztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiiigAooooAKKKKACiiigAooooA');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #8492a6;
+            border: 2px solid #e8e8e8;
+            transition: border-color 0.3s ease;
+            cursor: default;
+        }
 
         .profile-photo:hover {
             border-color: #34495e;
@@ -280,16 +283,15 @@
 <body>
     <div class="container">
         <header class="header fade-in">
-          <div class="profile-photo" id="profilePhoto" style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQQBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUWEHInGBEzKRobHBFCNCUtHwCRYDMuHxJR4lN0RWZnKCUotJyomNj7OUUi0kKSw1NjcrOjw8OklOT01PT09PU1NVVldYWVpbXF5fYGFiY2VnZ2hqbGxubG1tb29yc3R1dnd4eXp8fn+Ag4SFhofJi4yNjo+QkZOUlZaXmJqcnZ6foKOkpaaorK6vsLOztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiiigAooooAKKKKACiiigAooooA'); background-size: cover; background-position: center;">
-</div>
-            <h1 class="name" id="name">Rohan Irani</h1>
-            <p class="tagline" id="tagline">Cybersecurity Student & Application Security Specialist</p>
+            <div class="profile-photo" id="profilePhoto"></div>
+            <h1 class="name">Rohan Irani</h1>
+            <p class="tagline">Cybersecurity Student & Application Security Specialist</p>
             <div class="contact-info">
                 <a href="tel:+918928008787" class="contact-item">
-                    📞 <span id="phone">(+91) 8928008787</span>
+                    📞 (+91) 8928008787
                 </a>
                 <a href="mailto:rohanirani2003@gmail.com" class="contact-item">
-                    ✉️ <span id="email">rohanirani2003@gmail.com</span>
+                    ✉️ rohanirani2003@gmail.com
                 </a>
                 <a href="https://linkedin.com/in/rohanirani" class="contact-item" target="_blank">
                     💼 LinkedIn
@@ -302,12 +304,67 @@
 
         <section class="section fade-in">
             <h2 class="section-title">Experience</h2>
-            <div id="experienceContainer"></div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Application Security Testing & Vulnerability Assessment - Intern</div>
+                        <div class="company">Disney Star (The Walt Disney Company)</div>
+                    </div>
+                    <div class="duration">June-October 2024</div>
+                </div>
+                <ul class="achievements">
+                    <li>Analysed and executed over <span class="metric">15 in-depth vulnerability assessments</span> and <span class="highlight">penetration tests</span> on web and software applications, identifying critical security flaws and contributing to a <span class="metric">40% reduction</span> in exploitable vulnerabilities.</li>
+                    <li>Utilized industry-standard tools including <span class="highlight">Burp Suite</span>, <span class="highlight">Fortify</span>, and <span class="highlight">Snyk</span> to detect security flaws such as <span class="highlight">injection</span>, <span class="highlight">misconfigurations</span>, and <span class="highlight">insecure dependencies</span>.</li>
+                    <li>Prioritized and remediated <span class="highlight">critical vulnerabilities</span>, significantly strengthening application security and <span class="highlight">compliance posture</span>.</li>
+                    <li>Stayed current on <span class="highlight">emerging threats</span> and trends in cybersecurity, adapting testing methods as needed to address new risks.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Freelance Prompt Engineer</div>
+                        <div class="company">Outliter.Ai</div>
+                    </div>
+                    <div class="duration">November 2024-March 2025</div>
+                </div>
+                <ul class="achievements">
+                    <li>Generated and reviewed over <span class="metric">1,000 prompts and responses</span> to train and fine-tune <span class="highlight">large language models (LLMs)</span>, improving output accuracy and contextual relevance by <span class="metric">30%+</span>.</li>
+                    <li>Collaborated remotely with <span class="highlight">cross-functional teams</span> to ensure high-quality, diverse datasets across multiple domains, contributing to the <span class="highlight">scalable deployment of AI systems</span>.</li>
+                    <li>Evaluated and refined <span class="highlight">AI-generated outputs</span> to ensure accuracy, clarity, and alignment with task guidelines.</li>
+                    <li>Maintained high productivity and quality standards in a <span class="highlight">fast-paced, remote freelance environment</span>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Service & Quality Assurance - Intern</div>
+                        <div class="company">Larsen & Toubro Infotech Mindtree</div>
+                    </div>
+                    <div class="duration">January - April 2023</div>
+                </div>
+                <ul class="achievements">
+                    <li>Spearheaded the strategic categorization and prioritization of over <span class="metric">2,000+ service tickets monthly</span>, leading to a <span class="metric">25% reduction</span> in average resolution time and improved <span class="highlight">SLA adherence</span> across multiple client accounts.</li>
+                    <li>Led the <span class="highlight">strategic categorization and prioritization</span> of service tickets to enhance operational efficiency and ensure alignment with quality standards.</li>
+                    <li>Audited and evaluated <span class="metric">100+ service tickets per week</span> for compliance with internal <span class="highlight">SOPs</span> and client-specific <span class="highlight">SLAs</span>.</li>
+                </ul>
+            </div>
         </section>
 
         <section class="section fade-in">
             <h2 class="section-title">Projects</h2>
-            <div id="projectsContainer"></div>
+            
+            <div class="project-item">
+                <div class="job-title">LawGIC-AI</div>
+                <p style="color: #34495e; font-size: 0.95rem; line-height: 1.6; margin-top: 12px;">An <span class="highlight">AI-powered legal tool</span> that answers legal queries using the <span class="highlight">2023 BNS, BNSS, and BSA codes</span>, with <span class="highlight">section-wise references</span> for accurate legal guidance. Combines <span class="highlight">natural language processing</span> with <span class="highlight">legal database integration</span>.</p>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">CAN Bus Security Analysis</div>
+                <p style="color: #34495e; font-size: 0.95rem; line-height: 1.6; margin-top: 12px;">Comprehensive <span class="highlight">automotive cybersecurity research</span> project that simulated and analysed vulnerabilities in the <span class="highlight">Controller Area Network Bus</span> used in modern vehicles. Demonstrated <span class="highlight">DoS and replay attacks</span> on a virtual CAN environment and implemented custom tools to <span class="highlight">monitor and manipulate CAN traffic</span>.</p>
+            </div>
         </section>
 
         <section class="section fade-in">
@@ -315,183 +372,63 @@
             <div class="skills-grid">
                 <div class="skill-category">
                     <h4>Security Tools</h4>
-                    <div class="skill-tags" id="securitySkills"></div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Burp Suite</span>
+                        <span class="skill-tag">Fortify</span>
+                        <span class="skill-tag">Snyk</span>
+                        <span class="skill-tag">Autopsy</span>
+                        <span class="skill-tag">Packet Capture</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Penetration Testing</span>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <h4>Programming</h4>
-                    <div class="skill-tags" id="programmingSkills"></div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
                 </div>
                 <div class="skill-category">
                     <h4>Languages</h4>
-                    <div class="skill-tags" id="languageSkills"></div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English</span>
+                        <span class="skill-tag">Hindi</span>
+                        <span class="skill-tag">Gujarati</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section fade-in">
             <h2 class="section-title">Education</h2>
-            <div id="educationContainer"></div>
+            
+            <div class="education-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">B.Tech in Computer Engineering (Degree+Diploma)</div>
+                        <div class="company">Mukesh Patel School of Technology Management & Engineering (NMIMS)</div>
+                    </div>
+                    <div class="duration">July 2019 - June 2025</div>
+                </div>
+                <p style="color: #5d6d7e; font-size: 0.95rem;"><strong style="color: #2c3e50;">CGPA - 3.4/4</strong></p>
+            </div>
+
+            <div class="education-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">I.C.S.E</div>
+                        <div class="company">Christ Church High School</div>
+                    </div>
+                    <div class="duration">2017 - 2019</div>
+                </div>
+                <p style="color: #5d6d7e; font-size: 0.95rem;"><strong style="color: #2c3e50;">ICSE Board Exam - 87%</strong></p>
+            </div>
         </section>
     </div>
 
     <script>
-        // Resume data stored in JSON format for easy editing
-        const resumeData = {
-            personal: {
-                name: "Rohan Irani",
-                tagline: "Cybersecurity Student & Application Security Specialist",
-                phone: "(+91) 8928008787",
-                email: "rohanirani2003@gmail.com",
-                dob: "19th May, 2003"
-            },
-            experience: [
-                {
-                    title: "Application Security Testing & Vulnerability Assessment - Intern",
-                    company: "Disney Star (The Walt Disney Company)",
-                    location: "Mumbai",
-                    duration: "June-October 2024",
-                    achievements: [
-                        "Analysed and executed over <span class='metric'>15 in-depth vulnerability assessments</span> and <span class='highlight'>penetration tests</span> on web and software applications, identifying critical security flaws and contributing to a <span class='metric'>40% reduction</span> in exploitable vulnerabilities.",
-                        "Utilized industry-standard tools including <span class='highlight'>Burp Suite</span>, <span class='highlight'>Fortify</span>, and <span class='highlight'>Snyk</span> to detect security flaws such as <span class='highlight'>injection</span>, <span class='highlight'>misconfigurations</span>, and <span class='highlight'>insecure dependencies</span>.",
-                        "Prioritized and remediated <span class='highlight'>critical vulnerabilities</span>, significantly strengthening application security and <span class='highlight'>compliance posture</span>.",
-                        "Stayed current on <span class='highlight'>emerging threats</span> and trends in cybersecurity, adapting testing methods as needed to address new risks."
-                    ]
-                },
-                {
-                    title: "Freelance Prompt Engineer",
-                    company: "Outliter.Ai",
-                    location: "Remote",
-                    duration: "November 2024-March 2025",
-                    achievements: [
-                        "Generated and reviewed over <span class='metric'>1,000 prompts and responses</span> to train and fine-tune <span class='highlight'>large language models (LLMs)</span>, improving output accuracy and contextual relevance by <span class='metric'>30%+</span>.",
-                        "Collaborated remotely with <span class='highlight'>cross-functional teams</span> to ensure high-quality, diverse datasets across multiple domains, contributing to the <span class='highlight'>scalable deployment of AI systems</span>.",
-                        "Evaluated and refined <span class='highlight'>AI-generated outputs</span> to ensure accuracy, clarity, and alignment with task guidelines.",
-                        "Maintained high productivity and quality standards in a <span class='highlight'>fast-paced, remote freelance environment</span>."
-                    ]
-                },
-                {
-                    title: "Service & Quality Assurance - Intern",
-                    company: "Larsen & Toubro Infotech Mindtree",
-                    location: "Remote",
-                    duration: "January - April 2023",
-                    achievements: [
-                        "Spearheaded the strategic categorization and prioritization of over <span class='metric'>2,000+ service tickets monthly</span>, leading to a <span class='metric'>25% reduction</span> in average resolution time and improved <span class='highlight'>SLA adherence</span> across multiple client accounts.",
-                        "Led the <span class='highlight'>strategic categorization and prioritization</span> of service tickets to enhance operational efficiency and ensure alignment with quality standards.",
-                        "Audited and evaluated <span class='metric'>100+ service tickets per week</span> for compliance with internal <span class='highlight'>SOPs</span> and client-specific <span class='highlight'>SLAs</span>."
-                    ]
-                }
-            ],
-            projects: [
-                {
-                    title: "LawGIC-AI",
-                    description: "An <span class='highlight'>AI-powered legal tool</span> that answers legal queries using the <span class='highlight'>2023 BNS, BNSS, and BSA codes</span>, with <span class='highlight'>section-wise references</span> for accurate legal guidance. Combines <span class='highlight'>natural language processing</span> with <span class='highlight'>legal database integration</span>."
-                },
-                {
-                    title: "CAN Bus Security Analysis",
-                    description: "Comprehensive <span class='highlight'>automotive cybersecurity research</span> project that simulated and analysed vulnerabilities in the <span class='highlight'>Controller Area Network Bus</span> used in modern vehicles. Demonstrated <span class='highlight'>DoS and replay attacks</span> on a virtual CAN environment and implemented custom tools to <span class='highlight'>monitor and manipulate CAN traffic</span>."
-                }
-            ],
-            skills: {
-                security: ["Burp Suite", "Fortify", "Snyk", "Autopsy", "Packet Capture", "Vulnerability Assessment", "Penetration Testing"],
-                programming: ["Python", "JavaScript", "Linux"],
-                languages: ["English", "Hindi", "Gujarati"]
-            },
-            education: [
-                {
-                    institution: "Mukesh Patel School of Technology Management & Engineering (NMIMS)",
-                    location: "Mumbai",
-                    degree: "B.Tech in Computer Engineering (Degree+Diploma)",
-                    duration: "July 2019- June 2025",
-                    grade: "CGPA- 3.4/4"
-                },
-                {
-                    institution: "Christ Church High School",
-                    location: "Mumbai",
-                    degree: "I.C.S.E",
-                    duration: "",
-                    grade: "ICSE Board Exam- 87%"
-                }
-            ]
-        };
-
-        // Populate the website with data
-        function populateWebsite() {
-            // Populate experience section
-            const experienceContainer = document.getElementById('experienceContainer');
-            resumeData.experience.forEach(exp => {
-                const expDiv = document.createElement('div');
-                expDiv.className = 'experience-item';
-                expDiv.innerHTML = `
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">${exp.title}</div>
-                            <div class="company">${exp.company}</div>
-                        </div>
-                        <div class="duration">${exp.duration}</div>
-                    </div>
-                    <ul class="achievements">
-                        ${exp.achievements.map(achievement => `<li>${achievement}</li>`).join('')}
-                    </ul>
-                `;
-                experienceContainer.appendChild(expDiv);
-            });
-
-            // Populate projects section
-            const projectsContainer = document.getElementById('projectsContainer');
-            resumeData.projects.forEach(project => {
-                const projectDiv = document.createElement('div');
-                projectDiv.className = 'project-item';
-                projectDiv.innerHTML = `
-                    <div class="job-title">${project.title}</div>
-                    <p style="color: #34495e; font-size: 0.95rem; line-height: 1.6; margin-top: 12px;">${project.description}</p>
-                `;
-                projectsContainer.appendChild(projectDiv);
-            });
-
-            // Populate skills
-            const securitySkills = document.getElementById('securitySkills');
-            resumeData.skills.security.forEach(skill => {
-                const skillTag = document.createElement('span');
-                skillTag.className = 'skill-tag';
-                skillTag.textContent = skill;
-                securitySkills.appendChild(skillTag);
-            });
-
-            const programmingSkills = document.getElementById('programmingSkills');
-            resumeData.skills.programming.forEach(skill => {
-                const skillTag = document.createElement('span');
-                skillTag.className = 'skill-tag';
-                skillTag.textContent = skill;
-                programmingSkills.appendChild(skillTag);
-            });
-
-            const languageSkills = document.getElementById('languageSkills');
-            resumeData.skills.languages.forEach(skill => {
-                const skillTag = document.createElement('span');
-                skillTag.className = 'skill-tag';
-                skillTag.textContent = skill;
-                languageSkills.appendChild(skillTag);
-            });
-
-            // Populate education
-            const educationContainer = document.getElementById('educationContainer');
-            resumeData.education.forEach(edu => {
-                const eduDiv = document.createElement('div');
-                eduDiv.className = 'education-item';
-                eduDiv.innerHTML = `
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title">${edu.degree}</div>
-                            <div class="company">${edu.institution}</div>
-                        </div>
-                        <div class="duration">${edu.duration}</div>
-                    </div>
-                    <p style="color: #5d6d7e; font-size: 0.95rem;"><strong style="color: #2c3e50;">${edu.grade}</strong></p>
-                `;
-                educationContainer.appendChild(eduDiv);
-            });
-        }
-
         // Fade-in animation on scroll
         function animateOnScroll() {
             const elements = document.querySelectorAll('.fade-in');
@@ -508,64 +445,9 @@
             });
         }
 
-        // Photo upload functionality
-        function setupPhotoUpload() {
-            const profilePhoto = document.getElementById('profilePhoto');
-            const fileInput = document.createElement('input');
-            fileInput.type = 'file';
-            fileInput.accept = 'image/*';
-            fileInput.style.display = 'none';
-            
-            profilePhoto.addEventListener('click', () => {
-                fileInput.click();
-            });
-            
-            fileInput.addEventListener('change', (e) => {
-                const file = e.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = (e) => {
-                        profilePhoto.style.backgroundImage = `url(${e.target.result})`;
-                        profilePhoto.style.backgroundSize = 'cover';
-                        profilePhoto.style.backgroundPosition = 'center';
-                        profilePhoto.textContent = '';
-                    };
-                    reader.readAsDataURL(file);
-                }
-            });
-            
-            document.body.appendChild(fileInput);
-        }
-
-        // Function to export data (for easy editing)
-        function exportData() {
-            console.log('Resume Data:', JSON.stringify(resumeData, null, 2));
-            return resumeData;
-        }
-
-        // Function to update data (for easy editing)
-        function updateData(newData) {
-            Object.assign(resumeData, newData);
-            // Re-populate the website
-            document.getElementById('experienceContainer').innerHTML = '';
-            document.getElementById('projectsContainer').innerHTML = '';
-            document.getElementById('securitySkills').innerHTML = '';
-            document.getElementById('programmingSkills').innerHTML = '';
-            document.getElementById('languageSkills').innerHTML = '';
-            document.getElementById('educationContainer').innerHTML = '';
-            populateWebsite();
-        }
-
         // Initialize the website
         document.addEventListener('DOMContentLoaded', () => {
-            populateWebsite();
             animateOnScroll();
-            setupPhotoUpload();
-            
-            // Make functions available globally for editing
-            window.exportData = exportData;
-            window.updateData = updateData;
-            window.resumeData = resumeData;
         });
     </script>
 </body>

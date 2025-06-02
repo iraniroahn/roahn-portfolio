@@ -151,6 +151,24 @@
             font-weight: 400;
             font-style: italic;
         }
+        .company-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+}
+
+        .company-logo {
+         width: 24px;
+        height: 24px;
+        object-fit: contain;
+        border-radius: 3px;
+}
+
+        .company-info {
+        display: flex;
+        flex-direction: column;
+}
 
         .duration {
             color: #7f8c8d;
@@ -305,51 +323,60 @@
             <h2 class="section-title">Experience</h2>
             
             <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Application Security Testing & Vulnerability Assessment - Intern</div>
-                        <div class="company">Disney Star (The Walt Disney Company)</div>
-                    </div>
-                    <div class="duration">June-October 2024</div>
-                </div>
-                <ul class="achievements">
-                    <li>Analysed and executed over <span class="metric">15 in-depth vulnerability assessments</span> and <span class="highlight">penetration tests</span> on web and software applications, identifying critical security flaws and contributing to a <span class="metric">40% reduction</span> in exploitable vulnerabilities.</li>
-                    <li>Utilized industry-standard tools including <span class="highlight">Burp Suite</span>, <span class="highlight">Fortify</span>, and <span class="highlight">Snyk</span> to detect security flaws such as <span class="highlight">injection</span>, <span class="highlight">misconfigurations</span>, and <span class="highlight">insecure dependencies</span>.</li>
-                    <li>Prioritized and remediated <span class="highlight">critical vulnerabilities</span>, significantly strengthening application security and <span class="highlight">compliance posture</span>.</li>
-                    <li>Stayed current on <span class="highlight">emerging threats</span> and trends in cybersecurity, adapting testing methods as needed to address new risks.</li>
-                </ul>
+    <div class="job-header">
+        <div>
+            <div class="job-title">Application Security Testing & Vulnerability Assessment - Intern</div>
+            <div class="company-header">
+                <img src="https://raw.githubusercontent.com/iraniroahn/roahn-portfolio/main/Disney_Star_logo.png" alt="Disney Star Logo" class="company-logo">
+                <div class="company">Disney Star (The Walt Disney Company)</div>
             </div>
+        </div>
+        <div class="duration">June-October 2024</div>
+    </div>
+    <ul class="achievements">
+        <li>Analysed and executed over <span class="metric">15 in-depth vulnerability assessments</span> and <span class="highlight">penetration tests</span> on web and software applications, identifying critical security flaws and contributing to a <span class="metric">40% reduction</span> in exploitable vulnerabilities.</li>
+        <li>Utilized industry-standard tools including <span class="highlight">Burp Suite</span>, <span class="highlight">Fortify</span>, and <span class="highlight">Snyk</span> to detect security flaws such as <span class="highlight">injection</span>, <span class="highlight">misconfigurations</span>, and <span class="highlight">insecure dependencies</span>.</li>
+        <li>Prioritized and remediated <span class="highlight">critical vulnerabilities</span>, significantly strengthening application security and <span class="highlight">compliance posture</span>.</li>
+        <li>Stayed current on <span class="highlight">emerging threats</span> and trends in cybersecurity, adapting testing methods as needed to address new risks.</li>
+    </ul>
+</div>
 
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Freelance Prompt Engineer</div>
-                        <div class="company">Outliter.Ai</div>
-                    </div>
-                    <div class="duration">November 2024-March 2025</div>
-                </div>
-                <ul class="achievements">
-                    <li>Generated and reviewed over <span class="metric">1,000 prompts and responses</span> to train and fine-tune <span class="highlight">large language models (LLMs)</span>, improving output accuracy and contextual relevance by <span class="metric">30%+</span>.</li>
-                    <li>Collaborated remotely with <span class="highlight">cross-functional teams</span> to ensure high-quality, diverse datasets across multiple domains, contributing to the <span class="highlight">scalable deployment of AI systems</span>.</li>
-                    <li>Evaluated and refined <span class="highlight">AI-generated outputs</span> to ensure accuracy, clarity, and alignment with task guidelines.</li>
-                    <li>Maintained high productivity and quality standards in a <span class="highlight">fast-paced, remote freelance environment</span>.</li>
-                </ul>
+<div class="experience-item">
+    <div class="job-header">
+        <div>
+            <div class="job-title">Freelance Prompt Engineer</div>
+            <div class="company-header">
+                <img src="https://raw.githubusercontent.com/iraniroahn/roahn-portfolio/main/outlier.png" alt="Outliter.ai Logo" class="company-logo">
+                <div class="company">Outliter.Ai</div>
             </div>
+        </div>
+        <div class="duration">November 2024-March 2025</div>
+    </div>
+    <ul class="achievements">
+        <li>Generated and reviewed over <span class="metric">1,000 prompts and responses</span> to train and fine-tune <span class="highlight">large language models (LLMs)</span>, improving output accuracy and contextual relevance by <span class="metric">30%+</span>.</li>
+        <li>Collaborated remotely with <span class="highlight">cross-functional teams</span> to ensure high-quality, diverse datasets across multiple domains, contributing to the <span class="highlight">scalable deployment of AI systems</span>.</li>
+        <li>Evaluated and refined <span class="highlight">AI-generated outputs</span> to ensure accuracy, clarity, and alignment with task guidelines.</li>
+        <li>Maintained high productivity and quality standards in a <span class="highlight">fast-paced, remote freelance environment</span>.</li>
+    </ul>
+</div>
 
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <div class="job-title">Service & Quality Assurance - Intern</div>
-                        <div class="company">Larsen & Toubro Infotech Mindtree</div>
-                    </div>
-                    <div class="duration">January - April 2023</div>
-                </div>
-                <ul class="achievements">
-                    <li>Spearheaded the strategic categorization and prioritization of over <span class="metric">2,000+ service tickets monthly</span>, leading to a <span class="metric">25% reduction</span> in average resolution time and improved <span class="highlight">SLA adherence</span> across multiple client accounts.</li>
-                    <li>Led the <span class="highlight">strategic categorization and prioritization</span> of service tickets to enhance operational efficiency and ensure alignment with quality standards.</li>
-                    <li>Audited and evaluated <span class="metric">100+ service tickets per week</span> for compliance with internal <span class="highlight">SOPs</span> and client-specific <span class="highlight">SLAs</span>.</li>
-                </ul>
+<div class="experience-item">
+    <div class="job-header">
+        <div>
+            <div class="job-title">Service & Quality Assurance - Intern</div>
+            <div class="company-header">
+                <img src="https://raw.githubusercontent.com/iraniroahn/roahn-portfolio/main/LTI_Lets_solve.png" alt="LTI Mindtree Logo" class="company-logo">
+                <div class="company">Larsen & Toubro Infotech Mindtree</div>
             </div>
+        </div>
+        <div class="duration">January - April 2023</div>
+    </div>
+    <ul class="achievements">
+        <li>Spearheaded the strategic categorization and prioritization of over <span class="metric">2,000+ service tickets monthly</span>, leading to a <span class="metric">25% reduction</span> in average resolution time and improved <span class="highlight">SLA adherence</span> across multiple client accounts.</li>
+        <li>Led the <span class="highlight">strategic categorization and prioritization</span> of service tickets to enhance operational efficiency and ensure alignment with quality standards.</li>
+        <li>Audited and evaluated <span class="metric">100+ service tickets per week</span> for compliance with internal <span class="highlight">SOPs</span> and client-specific <span class="highlight">SLAs</span>.</li>
+    </ul>
+</div>
         </section>
 
         <section class="section fade-in">
